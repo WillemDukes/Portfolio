@@ -1,8 +1,8 @@
 /* ================= ROOT COLOUR PALETTE ================= */
 :root {
-  --primary-color: #2f5933;     /* dark green */
-  --secondary-color: #a3b899;   /* light green */
-  --background-color: #f6f8f5;  /* off white */
+  --primary-color: #2f5933;
+  --secondary-color: #a3b899;
+  --background-color: #f6f8f5;
   --link-color: #2a4d29;
 }
 
@@ -16,7 +16,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background-color: var(--background-color);
-  color: var(--primary-color); /* ALL text green */
+  color: var(--primary-color);
   line-height: 1.6;
 }
 
@@ -54,6 +54,17 @@ section.project h2 {
   margin-top: 0;
 }
 
+/* ================= CENTERED SECTIONS ================= */
+.centered-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.centered-section {
+  text-align: center;
+}
+
+/* ================= LISTS ================= */
 section.project ul {
   margin: 0.5rem 0 0;
   padding-left: 1.2rem;
@@ -69,7 +80,6 @@ section.project li {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.25rem;
   margin-top: 1.5rem;
-  align-items: start;
 }
 
 .project-images figure {
@@ -82,15 +92,14 @@ section.project li {
 .project-images img {
   width: 100%;
   max-width: 320px;
-  height: 220px;            /* equal image height */
-  object-fit: cover;       /* crops tall images cleanly */
+  height: 220px;
+  object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
 }
 
 .project-images figcaption {
   font-size: 0.85rem;
-  color: var(--primary-color);
   margin-top: 0.4rem;
   text-align: center;
   max-width: 320px;
