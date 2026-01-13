@@ -22,23 +22,35 @@
 
 .project-images {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
-  margin-top: 1.5rem;
-  justify-items: center;
+  margin-top: 2rem;
+  justify-content: center;
 }
 
-/* Ensure all images are same width and centered */
+/* Center the last row when it has fewer images */
+@media (max-width: 900px) {
+  .project-images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .project-images {
+    grid-template-columns: 1fr;
+  }
+}
+
 .project-images figure {
-  max-width: 320px;
   width: 100%;
+  max-width: 340px;
+  margin: 0 auto;
   text-align: center;
 }
 
-/* Make images visually consistent */
 .project-images img {
   width: 100%;
-  height: 220px;
+  height: 240px;
   object-fit: cover;
   border-radius: 10px;
 }
