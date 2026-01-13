@@ -3,7 +3,6 @@
   --primary-color: #2f5933; /* dark green */
   --secondary-color: #a3b899; /* light green */
   --background-color: #f6f8f5; /* off white */
-  --text-color: #333333;
   --link-color: #2a4d29;
 }
 
@@ -13,12 +12,14 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background-color: var(--background-color);
-  color: var(--text-color);
+  color: var(--primary-color); /* ALL text now green */
   line-height: 1.6;
 }
 
+/* ================= HERO ================= */
 header.hero {
   background-color: var(--secondary-color);
   color: var(--primary-color);
@@ -34,6 +35,7 @@ header .profile {
   margin-bottom: 1rem;
 }
 
+/* ================= MAIN CONTENT ================= */
 main {
   max-width: 960px;
   margin: 0 auto;
@@ -60,6 +62,7 @@ section.project li {
   margin-bottom: 0.25rem;
 }
 
+/* ================= IMAGES ================= */
 .project-images {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -80,13 +83,15 @@ section.project li {
 
 .project-images figcaption {
   font-size: 0.85rem;
-  color: #555;
+  color: var(--primary-color); /* captions now green */
   margin-top: 0.25rem;
   text-align: center;
 }
 
+/* ================= LINKS ================= */
 a {
-  color: var(--link-color);
+  color: var(--primary-color);
+  font-weight: 500;
   text-decoration: none;
 }
 
@@ -94,6 +99,7 @@ a:hover {
   text-decoration: underline;
 }
 
+/* ================= FOOTER ================= */
 footer {
   background-color: var(--secondary-color);
   color: var(--primary-color);
@@ -101,6 +107,7 @@ footer {
   padding: 1rem;
 }
 
+/* ================= MOBILE ================= */
 @media (max-width: 600px) {
   header .profile {
     width: 120px;
