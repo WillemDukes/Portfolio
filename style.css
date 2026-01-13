@@ -1,1 +1,65 @@
-/* ================= CENTERED HEADINGS ================= */ /* Center project title and subtitle */ #eagle-project h2, #eagle-project > p:first-of-type { text-align: center; } /* Center "Skills Demonstrated" heading only */ #eagle-project strong { display: block; text-align: center; margin-top: 2rem; } /* Center Resume & Contact section */ #resume-contact { text-align: center; } /* ================= IMAGE GRID POLISH ================= */ .project-images { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2rem; justify-content: center; } /* Center the last row when it has fewer images */ @media (max-width: 900px) { .project-images { grid-template-columns: repeat(2, 1fr); } } @media (max-width: 600px) { .project-images { grid-template-columns: 1fr; } } .project-images figure { width: 100%; max-width: 340px; margin: 0 auto; text-align: center; } .project-images img { width: 100%; height: 240px; object-fit: cover; border-radius: 10px; }
+/* ================= FORCE CENTERED HEADINGS ================= */
+
+/* Center project title */
+#eagle-project h2 {
+  text-align: center !important;
+}
+
+/* Center the subtitle line directly under the title */
+#eagle-project p:first-of-type {
+  text-align: center !important;
+  font-weight: 600;
+}
+
+/* Center ONLY the "Skills Demonstrated:" label */
+#eagle-project p strong {
+  display: block;
+  text-align: center !important;
+  margin-top: 2rem;
+}
+
+/* Center Resume & Contact section completely */
+#resume-contact,
+#resume-contact h2,
+#resume-contact p {
+  text-align: center !important;
+}
+
+/* ================= IMAGE GRID POLISH ================= */
+
+.project-images {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+  justify-content: center;
+  justify-items: center;
+}
+
+/* Responsive layout */
+@media (max-width: 900px) {
+  .project-images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .project-images {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Ensure all images are equal size and centered */
+.project-images figure {
+  width: 100%;
+  max-width: 340px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.project-images img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 10px;
+}
