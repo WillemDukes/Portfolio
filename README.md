@@ -12,12 +12,12 @@
   - [View my infection model](https://willemdukes.github.io/Stella-Architect-/) <b>
 
 
-<h2> 🤳 Resume and Contact:</h2>
+<h2>Resume and Contact:</h2>
 
 
-[<img align="left" alt="JoshMadakor | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin]
+  <p><a href="Assets/Resume.pdf" download> Download my resume</a> </p>
 
-
-[linkedin]: https://linkedin.com/in/joshmadakor
-
+        <p>Email: <a href="mailto:willemdukes@gmail.com">willemdukes@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/willemdukes" target="_blank">github.com/willemdukes</a></p>
+        <p>251-545-0629</p>
 
