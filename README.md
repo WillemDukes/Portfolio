@@ -15,9 +15,10 @@
 <h2>Resume and Contact:</h2>
 
 
-  <p><a href="Assets/Resume.pdf" download> Download my resume</a> </p>
+  - <p><a href="Assets/Resume.pdf" download> Resume</a> </p>
 
-        <p>Email: <a href="mailto:willemdukes@gmail.com">willemdukes@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/willemdukes" target="_blank">github.com/willemdukes</a></p>
-        <p>251-545-0629</p>
+- **Email:** [willemdukes@gmail.com](mailto:willemdukes@gmail.com)
+- **GitHub:** [github.com/willemdukes](https://github.com/willemdukes)
+- **Phone:** 251-545-0629
+
 
